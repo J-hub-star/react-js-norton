@@ -1,0 +1,22 @@
+table{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #64C9CF;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #DF711B;
+    color: white;
+  }
