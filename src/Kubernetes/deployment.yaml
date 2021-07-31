@@ -1,0 +1,38 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: my-react-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: norton
+  template:
+    metadata:
+      labels:
+        app: norton
+    spec:
+      containers:
+        - name: my-react-app
+          image: localhost:5000/my-react-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: norton
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      nodePort: 31000
+  selector:
+    app: norton
+
+
+
