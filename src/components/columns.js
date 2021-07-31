@@ -22,7 +22,8 @@ export const COLUMNS = [
     {
         Header: 'Host Star Temperature',
         Footer:'Temperature',
-        accessor:'HostStarTempK'
+        accessor:'HostStarTempK',
+        disableFilters: true
     },
     {
         Header:'Discovered In',

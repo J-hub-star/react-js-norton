@@ -6,7 +6,7 @@ export default function ButtonJsx(sorted) {
     let sortedColor = sorted["sorted"];
     return (
         
-        <div className={`sol3 btn ${sortedColor}`} >
+        <div className={` btn ${sortedColor}`} >
             
         </div>
         
