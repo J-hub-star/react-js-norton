@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Logo from './Capture.JPG';
+import './styles.scss'
 
 export default function Header() {
     return (
-        <div>
-            <h1>Test Header</h1>
-        </div>
+        <header>
+            <div className="wrap">
+                <div className="logo">
+                    <img src={Logo} alt="logo" />
+                    
+                </div>
+               
+            </div>
+        </header>
     )
 }

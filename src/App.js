@@ -8,8 +8,6 @@ function App() {
     <div className="App" >
     <Header></Header>
     <div className="contianer">
-    
-      <button>Click me</button>
     </div>
     </div>
   );

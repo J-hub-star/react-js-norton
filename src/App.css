@@ -1,8 +1,16 @@
 html{
     background: url(./image.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
 }
     
