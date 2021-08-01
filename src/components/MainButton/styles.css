@@ -1,0 +1,27 @@
+.container{
+    position:relative;
+
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    margin: -25px 0 0 -25px; 
+  }
+
+.btn{
+    background-color: white;
+    color: #000000;
+    border: 2px solid #FFF200;
+    transition-duration: 0.4s;
+    height:75px;
+}
+
+.btn:hover{
+    background-color: #FFF200; /* Green */
+    color: white;
+
+}
