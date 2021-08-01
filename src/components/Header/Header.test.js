@@ -8,10 +8,16 @@ const setUp = () => {
     return component;
 }
 
+const findByTest = (com,dataTest) =>{
+    const wrapper= com.find(`[data-test='${dataTest}']`);
+    return wrapper;
+
+}
+
 describe('Header Component tests', () =>{
     it('It should render without errors', () =>{
         const component = setUp();
-        const wrapper = component.find('.HeaderComponent')
+        const wrapper = findByTest(component,'HeaderComponent')
     expect(wrapper.length).toBe(1);
 })
 
