@@ -12,7 +12,7 @@
     margin: -25px 0 0 -25px; 
   }
 
-.btn{
+.btn-main{
     background-color: white;
     color: #000000;
     border: 2px solid #FFF200;
@@ -20,7 +20,7 @@
     height:75px;
 }
 
-.btn:hover{
+.btn-main:hover{
     background-color: #FFF200; /* Green */
     color: white;
 
