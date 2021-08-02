@@ -41,8 +41,9 @@ export default function SolutionPage()
     }
 
     const togglePopupO = () => {
+        SetOrPlanets(oplanets);
         setOprhan(!orphan);
-        console.log(orphan)
+        console.log(oplanets)
     }
 
     useEffect(()=>{
@@ -50,7 +51,6 @@ export default function SolutionPage()
         setHot(newHotPlanet(planet));
         var data = filterDataOprhanPlanets(planet)
         SetOrPlanets(data);
-        console.log(planet.length)
     },[reload])
 
     
@@ -70,7 +70,8 @@ export default function SolutionPage()
                 handleClose={togglePopup}
                 />}
 
-            {orphan&&<ModalOrphan planets={oplanets}  handleClose={togglePopupO}  />}
+            {orphan &&<ModalOrphan planets={oplanets}
+                                  handleClose={togglePopupO}  />}
 
             <ZTableContainer columns={COLUMNS} data={planet} />
         </div>

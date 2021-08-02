@@ -38,14 +38,9 @@ export default function TimeLine() {
         //console.log(data)
         let finalOutput = []
         array.sort((a,b)=>b-a)
-        //console.log(array)
-        let raduisJpt = []
+        
         let yearR = 0
         let year = array[yearR]
-        let exampleOutput = []
-        //console.log(data)
-        //finalOutput.push({"Year":array[0],"Small":0,"Meduim":0,"Large":0})
-        //first loop through and all the years
         for(let i =0; i< array.length;i++)
         {
             finalOutput.push({"Year":array[yearR],"Small":0,"Meduim":0,"Large":0})
@@ -60,10 +55,9 @@ export default function TimeLine() {
             }
             yearR = yearR+1;
         }
-        //console.log(data)
-        //setData(finalOutput);
+        
         setYearData(finalOutput)
-        //console.log(finalOutput)
+        
         console.log(  reload )
     }
 
