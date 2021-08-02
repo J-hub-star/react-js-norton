@@ -26,8 +26,6 @@ export default function TimeLine() {
         const arr = data.map(item=>item.DiscoveryYear)
         const un = new Set(arr)
         setUniqueYear(un)
-        //console.log(uniqueYear)
-        //console.log(un)
     }
 
     function getFinalOutput(){

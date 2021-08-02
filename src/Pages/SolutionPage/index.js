@@ -4,10 +4,26 @@ import './styles.css'
 import ZTableContainer from '../../components/Table/TableContainer';
 import {COLUMNS} from '../../components/Table/columns';
 import Popup from '../../components/Popups/ModelHot';
-import ModalOrphan from '../../components/Popups/ModalOrphan';
+//import ModalOrphan from '../../components/Popups/ModalOrphan';
 import newHotPlanet from '../../components/Utils/hottestHost';
 import filterDataOprhanPlanets from '../../components/Utils/filterData';
 import {Link} from 'react-router-dom';
+
+function ModalOrphan({planets,handleClose}) {
+    return (
+        <div className="popup-box">
+        <div className="box">
+            <h4> The Oprhan Planets are: </h4>
+            <span className="close-icon" onClick={handleClose}>x</span>
+            {planets.map((planet)=> (
+                <div>
+                    {planet.PlanetIdentifier}
+                </div>
+            ))}
+            </div>
+        </div>
+    )
+}
 
 export default function SolutionPage() 
 {
