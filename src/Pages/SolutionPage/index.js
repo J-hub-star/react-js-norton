@@ -57,9 +57,9 @@ export default function SolutionPage()
     }
 
     const togglePopupO = () => {
-        SetOrPlanets(oplanets);
+        //SetOrPlanets(oplanets);
         setOprhan(!orphan);
-        console.log(oplanets)
+        
     }
 
     useEffect(()=>{
