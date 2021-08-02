@@ -50,6 +50,7 @@ export default function SolutionPage()
         const url = "https://gist.githubusercontent.com/joelbirchler/66cf8045fcbb6515557347c05d789b4a/raw/9a196385b44d4288431eef74896c0512bad3defe/exoplanets";
         axios.get(url).then((response) => setPlanet(response.data));
         //console.log(planet)
+       
     }
 
     const togglePopup = () => {
@@ -57,16 +58,16 @@ export default function SolutionPage()
     }
 
     const togglePopupO = () => {
-        //SetOrPlanets(oplanets);
+         setHot(newHotPlanet(planet));
+        var data = filterDataOprhanPlanets(planet)
+        SetOrPlanets(data);
         setOprhan(!orphan);
         
     }
 
     useEffect(()=>{
         getData();
-        setHot(newHotPlanet(planet));
-        var data = filterDataOprhanPlanets(planet)
-        SetOrPlanets(data);
+        
     },[reload])
 
     
