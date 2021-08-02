@@ -5,7 +5,7 @@ import ZTableContainer from '../../components/Table/TableContainer';
 import {COLUMNS} from '../../components/Table/columns';
 import Popup from '../../components/Popups/ModelHot';
 //import ModalOrphan from '../../components/Popups/ModalOrphan';
-import newHotPlanet from '../../components/Utils/hottestHost';
+//mport newHotPlanet from '../../components/Utils/hottestHost';
 import filterDataOprhanPlanets from '../../components/Utils/filterData';
 import {Link} from 'react-router-dom';
 

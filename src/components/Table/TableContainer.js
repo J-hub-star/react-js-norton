@@ -47,7 +47,7 @@ const onChangeInInput = event => {
 }
 
   return (
-    <Table bordered {...getTableProps()}>
+    <Table data-test="table" bordered {...getTableProps()}>
       <thead>
         {headerGroups.map(headerGroup => (
           <tr {...headerGroup.getHeaderGroupProps()}>
